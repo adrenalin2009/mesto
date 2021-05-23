@@ -5,6 +5,16 @@
   src: url(../vendor/Fonts/Inter-Regular.woff) format("woff");
   src: url(../vendor/Fonts/Inter-Regular.woff2) format("woff2");
 }
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./Fonts/Inter-Medium.woff2) format("woff2");
+  src: url(./Fonts/Inter-Medium.woff) format("woff");
+}
+
 @font-face {
   font-family: "Inter";
   font-style: normal;
