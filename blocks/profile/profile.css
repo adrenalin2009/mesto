@@ -4,17 +4,17 @@
 
 @media screen and (max-width: 600px) {
   .profile {
-    justify-content: center; 
+    justify-content: center;
     padding-bottom: 36px;
     flex-direction: row;
-    flex-wrap: nowrap;}
-    }
-
+    flex-wrap: nowrap;
+  }
+}
 
 @media screen and (max-width: 450px) {
   .profile {
     flex-direction: column;
     margin: auto;
     align-items: center;
-    }
+  }
 }
