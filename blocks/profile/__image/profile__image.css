@@ -1,15 +1,10 @@
 .profile__image {
+  width: 120px;
     border-radius: 100%;
 }
-@media screen and (max-width: 600px) {
-	.profile__image {
-	margin-bottom: 20px;
-	  }
-  }
 
-@media screen and (max-width: 320px) {
-    .profile__image {
-       margin-bottom: 0px;
-       width: 120px;
-      }
+@media screen and (max-width: 450px) {
+  .profile__image{
+margin-bottom: 0;
   }
+}

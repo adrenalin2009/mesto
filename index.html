@@ -1,95 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../mesto/pages/index.css" />
-    <title>Место Россия</title>
-  </head>
-  <body class="page">
-  	<header class="header">
-      <img src="./Image/Vector.svg" class="header__logo" alt="Логотип">
-    	<div class="header__line"></div>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./pages/index.css"/>
+        <title>Место Россия</title>
+    </head>
+    <body class="page">
+        <header class="header">
+            <img src="./Image/Vector.svg" class="header__logo" alt="Логотип" />
+        </header>
 
-    <main class="content">
+        <main class="content">
+            <section class="profiles">
+                <div class="profile">
+                    <img src="./Image/image.svg" class="profile__image" alt="Фото Жак-Ив Кусто" />
+                    <div class="profile__info">
+                        <h1 class="profile__title">Жак-Ив Кусто</h1>
+                        <button type="button" class="profile__open-button"></button>
+                        <p class="profile__subtitle">Исследователь океана</p>
+                    </div>
+                </div>
+                <button type="button" class="profiles__add-button"></button>
+            </section>
 
-      <section class="profiles">
-        <div class="profile">
-          <img src="./Image/image.svg" class="profile__image" alt="Фото Жак-Ив Кусто">
-          <div class="profile__Info">
-            <h1 class="profile__title">Жак-Ив Кусто</h1>
-            <button type="button" class="profile__edit-button"></button>
-            <p class="profile__subtitle">Исследователь океана</p>
+            <section class="cards-grid">
+                <ul class="cards-grid__list">
+                    <li class="cards-grid__item">
+                        <img src="./Image/kirill-pershin-1088404-unsplash-2.jpg" class="cards-grid__img" alt="Заброшенный храм в горах" />
+                        <div class="cards-grid__field">
+                            <p class="cards-grid__title">Карачаевск</p>
+                            <button type="button" class="cards-grid__button-like"></button>
+                        </div>
+                    </li>
+                    <li class="cards-grid__item">
+                        <img src="./Image/kirill-pershin-1404681-unsplash.jpg" class="cards-grid__img" alt="Гола эльбрус из далека" />
+                        <div class="cards-grid__field">
+                            <p class="cards-grid__title">Гора Эльбрус</p>
+                            <button type="button" class="cards-grid__button-like"></button>
+                        </div>
+                    </li>
+                    <li class="cards-grid__item">
+                        <img src="./Image/kirill-pershin-1556355-unsplash.jpg" class="cards-grid__img" alt="Леса и горы" />
+                        <div class="cards-grid__field">
+                            <p class="cards-grid__title">Домбай</p>
+                            <button type="button" class="cards-grid__button-like"></button>
+                        </div>
+                    </li>
+                    <li class="cards-grid__item">
+                        <img src="./Image/kirill-pershin-1404681-unsplash.jpg" class="cards-grid__img" alt="Гола эльбрус из далека" />
+                        <div class="cards-grid__field">
+                            <p class="cards-grid__title">Гора Эльбрус</p>
+                            <button type="button" class="cards-grid__button-like"></button>
+                        </div>
+                    </li>
+                    <li class="cards-grid__item">
+                        <img src="./Image/kirill-pershin-1556355-unsplash.jpg" class="cards-grid__img" alt="Леса и горы" />
+                        <div class="cards-grid__field">
+                            <p class="cards-grid__title">Домбай</p>
+                            <button type="button" class="cards-grid__button-like"></button>
+                        </div>
+                    </li>
+                    <li class="cards-grid__item">
+                        <img src="./Image/kirill-pershin-1088404-unsplash-2.jpg" class="cards-grid__img" alt="Заброшенный храм в горах" />
+                        <div class="cards-grid__field">
+                            <p class="cards-grid__title">Карачаево-Черкессия</p>
+                            <button type="button" class="cards-grid__button-like"></button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <section class="popup">
+          <div class="popup__container">
+            <button type="button" class="popup__button-close" aria-label="Закрыть"></button>
+            <form class="form" name="eddit">
+                <h2 class="form__title">Редактировать профиль</h2>
+                <input type="text" class="form__input form__input_type_name" name="name" value="Жак-Ив Кусто" />
+                <input type="text" class="form__input form__input_type_job" name="job" value="Исследователь океана" />
+                <button class="form__button-save">сохронить</button>
+            </form>
           </div>
-        </div>
-        <button type="button" class="profiles__add-button"></button>
-      </section>
-    
-      <section class="cards-grid">
-        <ul class="cards-grid__list">
-          <li class="cards-grid__item">
-            <img src="./Image/kirill-pershin-1088404-unsplash-2.jpg" class="cards-grid__img" alt="Заброшенный храм в горах">
-            <div class="cards-grid__field">
-              <p class="cards-grid__title">Карачаевск</p>
-					    <button type="button" class="cards-grid__button-like"></button>
-            </div>
-          </li>
-          <li class="cards-grid__item">
-            <img src="./Image/kirill-pershin-1404681-unsplash.jpg" class="cards-grid__img" alt="Гола эльбрус из далека">
-            <div class="cards-grid__field"> 
-              <p class="cards-grid__title">Гора Эльбрус</p>
-					    <button type="button" class="cards-grid__button-like"></button>
-            </div>
-          </li>
-				  <li class="cards-grid__item">
-            <img src="./Image/kirill-pershin-1556355-unsplash.jpg" class="cards-grid__img" alt="Леса и горы">
-            <div class="cards-grid__field">
-              <p class="cards-grid__title">Домбай</p>
-					    <button type="button" class="cards-grid__button-like"></button>
-            </div>
-          </li>
-				  <li class="cards-grid__item">
-            <img src="./Image/kirill-pershin-1404681-unsplash.jpg" class="cards-grid__img" alt="Гола эльбрус из далека">
-            <div class="cards-grid__field">
-              <p class="cards-grid__title">Гора Эльбрус</p>
-					    <button type="button" class="cards-grid__button-like"></button>
-            </div>
-          </li>
-				  <li class="cards-grid__item">
-            <img src="./Image/kirill-pershin-1556355-unsplash.jpg" class="cards-grid__img" alt="Леса и горы">
-            <div class="cards-grid__field">
-              <p class="cards-grid__title">Домбай</p>
-					    <button type="button" class="cards-grid__button-like"></button>
-            </div>
-          </li>
-				  <li class="cards-grid__item">
-            <img src="./Image/kirill-pershin-1088404-unsplash-2.jpg" class="cards-grid__img" alt="Заброшенный храм в горах">
-            <div class="cards-grid__field">
-              <p class="cards-grid__title">Карачаево-Черкессия</p>
-					    <button type="button" class="cards-grid__button-like"></button>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-		  <section class="popup">
-			  <form class="popup__container" name="eddit">
-				  <p class="popup__title">Редактировать профиль</p>
-				  <input type="text" class="popup__input popup__input-name" name="name" value="Жак-Ив Кусто"/> 
-				  <div class="popup__line"></div>
-				  <input type="text" class="popup__input popup__input-job" name="job" value="Исследователь океана"/>
-				  <div class="popup__line"></div>
-				  <button class="popup__button-save" >сохронить</button>
-			  	<button type="button" class="popup__button-close" aria-label="Закрыть"></button>
-			  </form>
-		  </section>
-    </main>
-
-    <footer class="footer">
-      <p class="footer__title">&#169; 2020 Mesto Russia</p>
-    </footer>
-		<script src="./blocks/scripts/popup.js"></script>
-    <script src="./blocks/scripts/form.js"></script>
-  </body>
+        </section>
+        <footer class="footer">
+            <p class="footer__title">&#169; 2020 Mesto Russia</p>
+        </footer>
+        <script src="./scripts/script.js"></script>
+    </body>
 </html>
+

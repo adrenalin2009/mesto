@@ -1,16 +1,19 @@
 .page {
   font-family: "Inter", sans-serif;
   color: #fff;
-  background-color: #2a2c2f;
+  background-color: #000000;
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  min-width: 320px;
+  min-width: 300px;
   max-width: 1280px;
-  
 }
-
 @media screen and (max-width: 1024px) {
   .page{
     padding: 0 19px;}
   }
+
+  @media screen and (max-width: 320px) {
+    .page{
+      padding: 0;}
+    }
