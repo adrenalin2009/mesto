@@ -4,15 +4,3 @@ height: 33px;
 object-fit: cover;
 padding: 45px 0 41px;
 }
-
-
-@media screen and (max-width: 320px) {
-  .header__logo {
-    padding-left: 27px;
-    width: 103.74px;
-    height: 24.4px;
-    }
-}
-
-
-

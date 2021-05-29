@@ -7,7 +7,6 @@
   box-sizing: border-box;
   background-image: url(../../../Image/Add\ Button.svg);
   cursor: pointer;
-  padding: 0;
 }
 
 .profiles__add-button:hover {
