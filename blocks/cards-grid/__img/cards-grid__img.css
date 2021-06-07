@@ -1,0 +1,6 @@
+.cards-grid__img {
+  position: relative;
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
+}
