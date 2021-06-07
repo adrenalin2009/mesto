@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let openPopupButton = document.querySelector(".profile__open-button");
 let popupProfile = document.querySelector(".popup__profile");
 let popupPlace = document.querySelector(".popup__place");
@@ -35,6 +36,21 @@ function openPopupProfile() {
 
 function openPopupPlace() {
   popupPlace.classList.add("popup_opened");
+=======
+let openPopupButton = document.querySelector('.profile__open-button');
+let popup = document.querySelector('.popup');
+let closePopupButton = document.querySelector('.popup__button-close');
+let formElement = document.querySelector('.form');
+let nameInput = document.querySelector('.form__input_type_name');
+let jobInput = document.querySelector('.form__input_type_job');
+let profileName = document.querySelector('.profile__title');
+let profileJob = document.querySelector('.profile__subtitle');
+
+function openPopup() {
+  popup.classList.add('popup_opened');
+  nameInput.value = profileName.textContent;
+  jobInput.value = profileJob.textContent;
+>>>>>>> f633ddbc80ba506bf784b543d7946ab357313ede
 }
 
 function closePopup() {
