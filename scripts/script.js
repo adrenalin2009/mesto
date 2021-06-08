@@ -9,7 +9,7 @@ let closePopupButtonImage = popupImage.querySelector(".popup__button-close");
 let buttonSave = document.querySelector(".form__button-save");
 
 const ImageTitle = popupImage.querySelector(".popup-image__title");
-const ImageSrc = popupImage.querySelector(".popup-image__container__image");
+const ImageSrc = popupImage.querySelector(".popup-image__img");
 
 let formElement = document.querySelector(".form");
 let nameInput = document.querySelector(".form__input_type_name");
