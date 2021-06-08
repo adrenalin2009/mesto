@@ -1,15 +1,15 @@
 let openPopupButton = document.querySelector(".profile__open-button");
-let popupProfile = document.querySelector(".popup__profile");
-let popupPlace = document.querySelector(".popup__place");
+let popupProfile = document.querySelector(".popup-profile");
+let popupPlace = document.querySelector(".popup-place");
 let closePopupButtonProfile = document.querySelector(".popup__button_close");
-let closePopupButtonPlace = document.querySelector(".popup__profile_button_close");
-let closePopupButtonImage = document.querySelector(".popup__image_button_close");
+let closePopupButtonPlace = document.querySelector(".popup-place_button_close");
+let closePopupButtonImage = document.querySelector(".popup-image_button_close");
 
 let buttonSave = document.querySelector(".form__button-save");
 
-const popupImage = document.querySelector(".popup_type_image");
-const ImageTitle = popupImage.querySelector(".popup__image_title");
-const ImageSrc = popupImage.querySelector(".popup__image");
+const popupImage = document.querySelector(".popup-image");
+const ImageTitle = popupImage.querySelector(".popup-image__title");
+const ImageSrc = popupImage.querySelector(".popup-image__container__image");
 
 let formElement = document.querySelector(".form");
 let nameInput = document.querySelector(".form__input_type_name");
