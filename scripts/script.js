@@ -1,13 +1,13 @@
 let openPopupButton = document.querySelector(".profile__open-button");
 let popupProfile = document.querySelector(".popup-profile");
 let popupPlace = document.querySelector(".popup-place");
-let closePopupButtonProfile = document.querySelector(".popup__button_close");
-let closePopupButtonPlace = document.querySelector(".popup-place_button_close");
-let closePopupButtonImage = document.querySelector(".popup-image_button_close");
+const popupImage = document.querySelector(".popup-image");
+let closePopupButtonProfile = popupProfile.querySelector(".popup__button-close");
+let closePopupButtonPlace = popupPlace.querySelector(".popup__button-close");
+let closePopupButtonImage = popupImage.querySelector(".popup__button-close");
 
 let buttonSave = document.querySelector(".form__button-save");
 
-const popupImage = document.querySelector(".popup-image");
 const ImageTitle = popupImage.querySelector(".popup-image__title");
 const ImageSrc = popupImage.querySelector(".popup-image__container__image");
 
