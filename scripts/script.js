@@ -115,7 +115,7 @@ initialCards.forEach((item) => {
 function addCard(event) {
   event.preventDefault();
   renderCard({ name: namePlace.value, link: linkPlace.value });
-  closePopup(popupImage);
+  closePopup(popupPlace);
   formCard.reset();
 }
 
