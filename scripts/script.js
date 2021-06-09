@@ -33,10 +33,8 @@ function openPopup (popup) {
   popup.classList.add("popup_opened")
 }
 
-function closePopup() {
-  popupProfile.classList.remove("popup_opened");
-  popupPlace.classList.remove("popup_opened");
-  popupImage.classList.remove("popup_opened");
+function closePopup(popup) {
+  popup.classList.remove("popup_opened");
 }
 
 function formSubmitHandler(evt) {
@@ -130,7 +128,7 @@ openPopupButton.addEventListener("click",() => {
   
 addButtonPlace.addEventListener("click",() => openPopup(popupPlace));
 formElement.addEventListener("submit", formSubmitHandler);
-closePopupButtonProfile.addEventListener("click", closePopup);
-closePopupButtonPlace.addEventListener("click", closePopup);
-closePopupButtonImage.addEventListener("click", closePopup);
+closePopupButtonProfile.addEventListener("click",() => closePopup(popupProfile));
+closePopupButtonPlace.addEventListener("click",()  => closePopup(popupPlace));
+closePopupButtonImage.addEventListener("click",()  => closePopup(popupImage));
 formCard.addEventListener("submit", addCard);
