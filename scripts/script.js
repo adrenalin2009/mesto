@@ -7,6 +7,7 @@ const closePopupButtonPlace = popupPlace.querySelector(".popup__button-close");
 const closePopupButtonImage = popupImage.querySelector(".popup__button-close");
 
 const buttonSave = document.querySelector(".form__button-save");
+const buttonSavePlace = popupPlace.querySelector(".form__button-save");
 
 const imageTitle = popupImage.querySelector(".popup-image__title");
 const imageSrc = popupImage.querySelector(".popup-image__img");
@@ -106,6 +107,8 @@ function addCard(event) {
   renderCard({ name: namePlace.value, link: linkPlace.value });
   closePopup(popupPlace);
   formCard.reset();
+  buttonSavePlace.classList.add("form__button-save_inactive");
+  buttonSavePlace.getAttribute("disabled",true);
 }
 
 
