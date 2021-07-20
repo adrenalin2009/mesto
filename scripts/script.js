@@ -11,7 +11,7 @@ const buttonSave = document.querySelector(".form__button-save");
 const imageTitle = popupImage.querySelector(".popup-image__title");
 const imageSrc = popupImage.querySelector(".popup-image__img");
 
-const formProfile = document.querySelector(".form");
+const formProfile = popupProfile.querySelector(".form");
 const nameInput = document.querySelector(".form__input_type_name");
 const jobInput = document.querySelector(".form__input_type_job");
 const profileName = document.querySelector(".profile__title");
